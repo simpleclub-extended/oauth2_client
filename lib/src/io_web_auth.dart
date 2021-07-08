@@ -1,5 +1,6 @@
-import 'base_web_auth.dart';
 import 'package:flutter_web_auth/flutter_web_auth.dart';
+
+import 'base_web_auth.dart';
 
 BaseWebAuth createWebAuth() => IoWebAuth();
 
@@ -10,6 +11,6 @@ class IoWebAuth implements BaseWebAuth {
       required String url,
       required String redirectUrl}) async {
     return await FlutterWebAuth.authenticate(
-        callbackUrlScheme: callbackUrlScheme, url: url);
+        callbackUrlScheme: callbackUrlScheme, url: url, preferEphemeral: true);
   }
 }

@@ -24,6 +24,12 @@ dev_dependencies:
   mockito: ^5.0.3
   pedantic: ^1.11.0
 
+dependency_overrides:
+  flutter_web_auth:
+    git:
+      url: https://github.com/LinusU/flutter_web_auth.git
+      ref: ephemeral
+
 # The following section is specific to Flutter.
 flutter: null
 
